@@ -3,7 +3,7 @@
 //  QuickSort
 //
 //  Created by Salil Jain on 8/6/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012 SaachiTech. All rights reserved.
 //
 
 #include <cmath>

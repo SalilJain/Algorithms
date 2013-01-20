@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E60376616AC61170084F213 /* MergeSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E60376416AC61170084F213 /* MergeSort.cpp */; };
 		D549805F15D177BA007DE9CC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D549805E15D177BA007DE9CC /* main.cpp */; };
 		D549806115D177BA007DE9CC /* Sort.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D549806015D177BA007DE9CC /* Sort.1 */; };
 		D549806815D177F4007DE9CC /* Heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D549806715D177F4007DE9CC /* Heap.cpp */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E60376416AC61170084F213 /* MergeSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MergeSort.cpp; sourceTree = "<group>"; };
 		D549805A15D177BA007DE9CC /* Sort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sort; sourceTree = BUILT_PRODUCTS_DIR; };
 		D549805E15D177BA007DE9CC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		D549806015D177BA007DE9CC /* Sort.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Sort.1; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				D549806715D177F4007DE9CC /* Heap.cpp */,
 				D549805E15D177BA007DE9CC /* main.cpp */,
 				D549806015D177BA007DE9CC /* Sort.1 */,
+				5E60376416AC61170084F213 /* MergeSort.cpp */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -121,6 +124,7 @@
 			files = (
 				D549805F15D177BA007DE9CC /* main.cpp in Sources */,
 				D549806815D177F4007DE9CC /* Heap.cpp in Sources */,
+				5E60376616AC61170084F213 /* MergeSort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +209,7 @@
 				D549806615D177BA007DE9CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

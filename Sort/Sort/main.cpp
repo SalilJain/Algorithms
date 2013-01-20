@@ -8,31 +8,50 @@
 
 #include <iostream>
 #include "Heap.cpp"
-int main (int argc, const char * argv[])
-{
+#include "MergeSort.cpp"
+void testMergeSort();
+void testHeap();
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
+void testMergeSort()
+{
+    vector<double> data;
+    data.push_back(1.6);
+    data.push_back(1.4);
+    data.push_back(2.6);
+    data.push_back(4.4);
+    data.push_back(0.6);
+    data.push_back(-1.4);
+    MergeSort<double> mergeSort(&data);
+    mergeSort.sort();
+    cout<<"Sorted data ";
+    for(int i=0;i<data.size();i++)
+    {
+        cout<<data[i]<<" ";
+    }
+    cout<<endl;
+}
+void testHeap()
+{
     int size=5;
     int errorCode=0;
     /*int * tree=(int*)malloc(sizeof(int)*size);
-    tree[0]=1;
-    tree[1]=4;
-    tree[2]=2;
-    tree[3]=3;
-    tree[4]=5;
-    Heap<int>  heap(tree,size,2);
-    std::cout<<heap;
-    
-    for(int i=0;i<size;i++)
-    {
-        int value=heap.popNode(&errorCode);
-        if(errorCode ==0)
-            std::cout<<"Pop "<<value<<std::endl;
-        else
-            std::cout<<"Tree exhausted"<<std::endl;
-        std::cout<<heap;
-    }*/
+     tree[0]=1;
+     tree[1]=4;
+     tree[2]=2;
+     tree[3]=3;
+     tree[4]=5;
+     Heap<int>  heap(tree,size,2);
+     std::cout<<heap;
+     
+     for(int i=0;i<size;i++)
+     {
+     int value=heap.popNode(&errorCode);
+     if(errorCode ==0)
+     std::cout<<"Pop "<<value<<std::endl;
+     else
+     std::cout<<"Tree exhausted"<<std::endl;
+     std::cout<<heap;
+     }*/
     double * data=(double*)malloc(sizeof(double)*size);
     data[0]=1.6;
     data[1]=1.4;
@@ -45,7 +64,7 @@ int main (int argc, const char * argv[])
     std::cout<<heapdbl;
     heapdbl.addNode(1.6, &errorCode);
     std::cout<<heapdbl;
-
+    
     heapdbl.addNode(2.7, &errorCode);
     std::cout<<heapdbl;
     heapdbl.addNode(1.9, &errorCode);
@@ -65,6 +84,14 @@ int main (int argc, const char * argv[])
         value=heapdbl.popNode(&errorCode);
         
     }
+}
+int main (int argc, const char * argv[])
+{
+
+    // insert code here...
+    std::cout << "Hello, World!\n";
+    
+    testMergeSort();
     return 0;
 }
 
